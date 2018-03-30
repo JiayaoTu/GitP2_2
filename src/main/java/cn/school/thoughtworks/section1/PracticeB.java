@@ -22,7 +22,7 @@ public class PracticeB {
             result.add(ss);
         }
         return result;
-        
+
     }
 }
 
