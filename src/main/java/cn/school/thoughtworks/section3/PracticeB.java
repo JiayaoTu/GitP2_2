@@ -7,6 +7,13 @@ public class PracticeB {
     Map<String,Integer> createUpdatedCollection(Map<String,Integer> collectionA, Map<String,List<String>> object) {
         //实现练习要求，并改写该行代码。
 
-        return null;
+        List<String> list = object.get("value");
+        for(String s : collectionA.keySet()){
+            if(list.contains(s)) {
+                int temp = collectionA.get(s);
+                collectionA.put(s, temp-(temp/3));
+            }
+        }
+        return collectionA;
     }
 }
